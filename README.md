@@ -10,9 +10,9 @@
 
 部分界面如下图
 
-![alt text](/images/image1.png)
+![alt text](./images/image1.png)
 
-![alt text](/images/image2.png)
+![alt text](./images/image2.png)
 
 ## 项目介绍
 
