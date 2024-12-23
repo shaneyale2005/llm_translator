@@ -1,0 +1,12 @@
+[project]
+name = "llm-translator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "gradio>=5",
+    "openai>=1.51.2",
+    "pyperclip>=1.9.0",
+    "python-dotenv>=1.0.1",
+]
