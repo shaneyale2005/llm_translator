@@ -1,3 +1,4 @@
+# agent.py
 import os
 from prompt import SYSTEM_PROMPT_GENERAL_TRANSLATOR, SYSTEM_PROMPT_ACADEMIC_TRANSLATOR, USER_PROMPT_TRANSLATOR
 from openai import OpenAI
@@ -49,9 +50,13 @@ class Translator:
                 stream=True
             )
             for chunk_response in response:
-                if chunk_response.choices[0].delta.content is not None:
-                    full_response += chunk_response.choices[0].delta.content
+                if not chunk_response.choices:
+                    continue
+                delta = chunk_response.choices[0].delta
+                if delta.content is not None:
+                    full_response += delta.content
                     yield full_response
+
 
         yield full_response
 
