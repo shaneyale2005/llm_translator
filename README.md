@@ -22,14 +22,14 @@
 
 1. 克隆项目
 ```
-git clone https://github.com/zeta186012/LLM_Translator.git
-cd LLM_Translator
+git clone https://github.com/shaneyale2005/llm_translator.git
+cd llm_tranlator
 ```
 
 2. 安装依赖(建议使用 conda 新建一个虚拟环境)
 ```
-conda create -n llmtranslator python=3.12 -y
-conda activate llmtranslator
+conda create -n llm_translator python=3.12 -y
+conda activate llm_translator
 pip install -r requirements.txt
 ```
 
